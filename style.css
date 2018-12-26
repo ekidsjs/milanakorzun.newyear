@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'New_Year';
+    src: url('./NewYearFont.otf');
+}
+
+#canvas {
+    z-index: 1;
+    height: 100%;
+    position: absolute;
+}
+
+body {
+    background-image: url('./img/bg.png');
+    overflow-x: hidden;
+}
+
+@keyframes blink {
+    0% {
+        color: blue
+    }
+    25% {
+        color: black
+    }
+    50% {
+        color: brown
+    }
+    75% {
+        color: yellow
+    }
+    100% {
+        color: aqua
+    }
+}
+
+.greeting {
+    font-family: 'New_Year';
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    animation: blink 10s normal infinite;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    margin: auto;
+    width: 61%;
+    font-size: 25px;
+}
+
+header {
+    min-height: 100vh;
+    text-align: center;
+}
+
+.header-tree {
+    padding: 20px 0 20px;
+    height: 350px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li {
+    text-align: center;
+    padding: 20px;
+    list-style: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+    max-width: 20%;
+}
+
+li img {
+    height: 100px;
+}
